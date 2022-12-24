@@ -39,27 +39,70 @@
                 <div class="about-col-2">
                     <h1 class="sotto-titolo">Chi sono</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore dolorem in odio quaerat, dicta numquam,
-                    exercitationem facere quas optio molestias fuga non ducimus
-                    excepturi! Iusto quidem architecto molestias perspiciatis,
-                    expedita magni nostrum error veniam molestiae sint
-                    recusandae, nobis voluptas libero atque mollitia
-                    accusantium quasi, maiores numquam facere nam minima!</p>
-                    
+                        Inventore dolorem in odio quaerat, dicta numquam,
+                        exercitationem facere quas optio molestias fuga non ducimus
+                        excepturi! Iusto quidem architecto molestias perspiciatis,
+                        expedita magni nostrum error veniam molestiae sint
+                        recusandae, nobis voluptas libero atque mollitia
+                        accusantium quasi, maiores numquam facere nam minima!</p>
+
                     <div class="tab-titles">
-                        <p class="tab-links">Skills</p>
-                        <p class="tab-links">Esperienza</p>
-                        <p class="tab-links">Studi</p>
+                        <p class="tab-links active-link" onclick="mostra_nascondi('skills')">Skills</p>
+                        <p class="tab-links" onclick="mostra_nascondi('esperienza')">Esperienza</p>
+                        <p class="tab-links" onclick="mostra_nascondi('certificati')">Certificati</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <!--Skills-->
+                            <li><span>HTML5 & CSS3</span> <br> Developer</li>
+                            <li><span>C# & UNITY</span> <br> Developer</li>
+                            <li><span>PHP</span> <br> Developer</li>
+                            <li><span>MYSQL</span> <br> Developer</li>
+                            <li><span>PYTHON</span> <br> Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="esperienza">
+                        <ul>
+                            <!--Esperienza-->
+                            <li><span>B3CUBE</span> <br> Innovation Specialist</li>
+                        </ul>
+                    </div>
+                        <div class="tab-content" id="certificati">
+                            <ul>
+                            <!--Certificati-->
+                            <li><span>CISCO</span> <br> IT ESSENTIAL</li>
+                            <li><span>CISCO</span> <br> CCNA</li>
+                        </ul>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
 
 
 
+<script>
+    var tabLink = document.getElementsByClassName("tab-links");
+    var tabContent = document.getElementsByClassName("tab-content");
 
+    function mostra_nascondi(nometab){
+
+        //Nascondi
+        for (i of tabLink)
+        {
+            i.classList.remove("active-link");
+        }
+        for (y of tabContent)
+        {
+            y.classList.remove("active-tab");
+        }
+
+        //Mostra
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(nometab).classList.add("active-tab");
+    }
+</script>
 
 
 </body>
