@@ -12,79 +12,95 @@
 <body>
 
     <div id="header">
-        <div class="container">
+        <div class="contenitore">
             <nav>
                 <img src="img/Logo.png" alt="" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#header">Home</a></li>
                     <li><a href="#">Progetti</a></li>
-                    <li><a href="#">Chi sono</a></li>
+                    <li><a href="#Chi_sono">Chi sono</a></li>
                     <li><a href="#">Contatti</a></li>
                 </ul>
             </nav>
             <div class="header-text">
-                <p>Developer</p>
-                <h1>Ciao, <br> Sono <span>Ruben Virzì</span></h1>
+                <h1>Benvenuto <br>Sono <span>{ Ruben Virzì } </span> e sono un Perito Informatico </Perito> <br></h1>
+                <p>Sono appassionato di AI, Machine Learning, Game Development, Innovazioni e Fotografia</p> <br>
+                
             </div>
         </div>
     </div>
+
     <!---------------Chi sono----------->
 
     <div id="Chi_sono">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
+        <div class="contenitore">
+            <div class="riga">
+                <div class="chisono-col-1">
                     <img src="img/chi_sono.jpg" alt="">
                 </div>
-                <div class="about-col-2">
+                <div class="chisono-col-2">
                     <h1 class="sotto-titolo">Chi sono</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Inventore dolorem in odio quaerat, dicta numquam,
-                        exercitationem facere quas optio molestias fuga non ducimus
-                        excepturi! Iusto quidem architecto molestias perspiciatis,
-                        expedita magni nostrum error veniam molestiae sint
-                        recusandae, nobis voluptas libero atque mollitia
-                        accusantium quasi, maiores numquam facere nam minima!</p>
+                    <p>Ho studiato come perito informatico all'Ascanio Sobrero di Casale Monferrato,
+                    sono un appassionato di programmazione (AI, automazioni, game development con Unity3D) e di fotografia.
+                    <br> Nel tempo libero, mi piace studiare ed imparare nuovi linguaggi di programmazione
+                    e mi tengo aggiornato sulle ultime novità del mondo tech.
+                    <br> La mia passione per l'informatica e la tecnologia,
+                    unita alla fotografia insieme all'ambizione di una crescita professionale
+                    mi rendono una persona dinamica e motivata.</p>
 
-                    <div class="tab-titles">
+                    <div class="tab-titoli">
                         <p class="tab-links active-link" onclick="mostra_nascondi('skills')">Skills</p>
                         <p class="tab-links" onclick="mostra_nascondi('esperienza')">Esperienza</p>
                         <p class="tab-links" onclick="mostra_nascondi('certificati')">Certificati</p>
                     </div>
-                    <div class="tab-content active-tab" id="skills">
+                    <div class="tab-contenuto active-tab" id="skills">
                         <ul>
                             <!--Skills-->
-                            <li><span>HTML5 & CSS3</span> <br> Developer</li>
-                            <li><span>C# & UNITY</span> <br> Developer</li>
-                            <li><span>PHP</span> <br> Developer</li>
-                            <li><span>MYSQL</span> <br> Developer</li>
-                            <li><span>PYTHON</span> <br> Developer</li>
+                            <li><span>MYSQL </span> <br> Creazione di Database</li>
+                            <li><span>HTML5 CSS3 JAVASCRIPT & PHP</span> <br> Web Application</li>
+                            <li><span>C# & UNITY </span> <br> Sviluppo di simulatori VR / Applicazioni AR / Videogiochi</li>
+                            <li><span>PYTHON</span> <br> Automazioni e RPA</li>
                         </ul>
                     </div>
-                    <div class="tab-content" id="esperienza">
+                    <div class="tab-contenuto" id="esperienza">
                         <ul>
                             <!--Esperienza-->
-                            <li><span>B3CUBE</span> <br> Innovation Specialist</li>
+                            <li><span>B3CUBE - 2020 -> ATTUALE</span> <br> Innovation Specialist</li>
                         </ul>
                     </div>
-                        <div class="tab-content" id="certificati">
+                        <div class="tab-contenuto" id="certificati">
                             <ul>
                             <!--Certificati-->
                             <li><span>CISCO</span> <br> IT ESSENTIAL</li>
                             <li><span>CISCO</span> <br> CCNA</li>
+                            <li><span>UDEMY</span> <br> C# 2d Game Development</li>
                         </ul>
                         </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!---------------Progetti----------->
+            <div class="progetti">
+                <div class="contenitore">
+                    <h1 class="sotto-titolo">Progetti</h1>
+                </div>
+            </div>
+
+
+
+
+
+
+
 
 
 
 
 <script>
     var tabLink = document.getElementsByClassName("tab-links");
-    var tabContent = document.getElementsByClassName("tab-content");
+    var tabContent = document.getElementsByClassName("tab-contenuto");
 
     function mostra_nascondi(nometab){
 
